@@ -10,7 +10,7 @@ const Menu = () => {
           }
         `}
       </style>
-      <Navbar bg="dark" expand="lg" variant="dark">
+      <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand href="#">Matheus Paes</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar" />
