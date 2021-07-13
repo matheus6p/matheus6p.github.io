@@ -1,0 +1,30 @@
+.profile-container {
+  background: green;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.profile-cover {
+  width: 100%;
+  border: 2px solid #222;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.profile-pic {
+  background: green;
+  width: 168px;
+  height: 168px;
+  border: 2px solid #222;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 99;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
