@@ -3,15 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
-  // background: green;
+  flex-wrap: wrap;
   margin-bottom: 25px;
-  overflow-x: scroll;
+  // background: green;
+  // overflow-x: scroll;
 
   .skill-single {
     min-width: 22%;
     max-width: 300px;
-    height: 180px;
+    height: 150px;
     margin-right: 5px;
     margin-bottom: 15px;
     display: flex;
