@@ -14,6 +14,7 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
   return (
     <Container>
+      <h2>Skills</h2>
       <div className="skills-container">
         <SkillCard
           txt={"Javascript"}
