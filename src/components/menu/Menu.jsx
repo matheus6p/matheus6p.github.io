@@ -11,7 +11,7 @@ const Menu = () => {
         `}
       </style>
       <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
-        <Container>
+        <Container fluid="lg">
           <Navbar.Brand href="#">Matheus Paes</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar" />
           <Navbar.Collapse className="justify-content-end">
