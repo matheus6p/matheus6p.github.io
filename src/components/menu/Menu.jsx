@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Menu = () => {
   return (
@@ -16,20 +17,26 @@ const Menu = () => {
           <Navbar.Toggle aria-controls="basic-navbar" />
           <Navbar.Collapse className="justify-content-end">
             <Nav>
-              <Nav.Link href="https://github.com/matheus6p" target="blank">
-                Github
+              <Nav.Link
+                href="https://github.com/matheus6p"
+                target="blank"
+                className="d-flex align-items-center"
+              >
+                Github <FaGithub />
               </Nav.Link>
               <Nav.Link
                 href="https://www.linkedin.com/in/matheus-henrique-paes-de-almeida-18565914a/"
                 target="blank"
+                className="d-flex align-items-center"
               >
-                LinkedIn
+                LinkedIn <FaLinkedin color={"#2867B2"} />
               </Nav.Link>
               <Nav.Link
                 href="https://www.instagram.com/matheushpa/"
                 target="blank"
+                className="d-flex align-items-center"
               >
-                Instagram
+                Instagram <FaInstagram color={"#C13584"} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
