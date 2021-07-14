@@ -1,30 +1,45 @@
 .profile-container {
-  background: green;
+  // background: green;
+  height: auto;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
 }
 .profile-cover {
+  max-height: 400px;
   width: 100%;
   border: 2px solid #222;
   border-radius: 5px;
 
   img {
     width: 100%;
+    height: 100%;
   }
 }
 
 .profile-pic {
-  background: green;
-  width: 168px;
-  height: 168px;
+  // background: red;
+  max-width: 168px;
+  max-height: 168px;
+  align-self: flex-end;
   border: 2px solid #222;
-  border-radius: 50%;
   margin: auto;
+  margin-top: -145px;
   z-index: 99;
 
+  border-radius: 50%;
   img {
     width: 100%;
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-cover {
+    height: 100%;
+    img {
+      height: 100%;
+    }
   }
 }
