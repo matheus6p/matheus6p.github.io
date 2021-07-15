@@ -6,7 +6,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <Container>
-      <h2>Projetos</h2>
+      <h2>Projects</h2>
       <div className="projects-container">
         <ProjectCard />
         <ProjectCard />
