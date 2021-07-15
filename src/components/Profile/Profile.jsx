@@ -20,7 +20,6 @@ const Profile = () => {
 
         <div className="profile-desc">
           <h1>Matheus Paes</h1>
-          <span>Tech lover.</span>
           <span>Computer Science student.</span>
           <span>Frontend Web Developer at Soft Informática.</span>
         </div>
