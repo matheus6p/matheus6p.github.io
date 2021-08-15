@@ -1,0 +1,36 @@
+:root {
+  --mainColor: #116466;
+  --mainColorHover: #01393a;
+}
+
+.primaryColor {
+  background: var(--mainColor);
+}
+
+.profilePic {
+  height: 100%;
+  max-height: 300px;
+  max-width: 100%;
+  border: 1px solid #121212;
+  border-radius: 50%;
+}
+
+.title {
+  color: var(--mainColor);
+}
+
+.cardImg {
+  height: 225px;
+  width: 100%;
+}
+
+#contato a {
+  text-decoration: none;
+  color: var(--mainColor);
+  font-size: 1.5em;
+  transition: 0.2s ease;
+}
+
+#contato a:hover {
+  color: var(--mainColorHover);
+}
