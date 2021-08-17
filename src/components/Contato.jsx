@@ -7,7 +7,7 @@ export default function Contato() {
   return (
     <section id="contato" className="py-5">
       <Container>
-        <h1 className="text-center title mb-3">Contato</h1>
+        <h1 className="text-center title mb-3">Contacte-me</h1>
         <Row>
           <Col lg={2} className="mx-auto ">
             <a

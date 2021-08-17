@@ -1,22 +1,22 @@
 import { Card, Button, ButtonGroup } from "react-bootstrap";
-import swdb from "../assets/sw-dashboard.jpeg";
 
 /* eslint-disable jsx-a11y/alt-text */
-export default function SingleProject() {
+export default function SingleProject(props) {
+  const techs = props.tech;
+
+  techs.map((item) => {
+    console.log(item);
+  });
   return (
     <Card>
-      <Card.Img variant="top" src={swdb} className="cardImg" />
+      <Card.Img variant="top" src={props.preview} className="cardImg" />
       <Card.Body>
-        <Card.Title>Project Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <Card.Title> {props.title} </Card.Title>
+        <Card.Text>{props.description}</Card.Text>
         <ul>
-          <li>Python</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>Bootstrap</li>
+          {techs.foreach((item) => {
+            <li> {item} </li>;
+          })}
         </ul>
         <ButtonGroup>
           <Button variant="outline-primary">Ver Projeto</Button>
