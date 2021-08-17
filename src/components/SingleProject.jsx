@@ -1,24 +1,42 @@
-import { Card, Button, ButtonGroup } from "react-bootstrap";
+/* eslint-disable react/jsx-no-target-blank */
+import { Card, Button, ButtonGroup, Row, Col } from "react-bootstrap";
+import swdb from "../assets/sw-dashboard.jpeg";
 
 /* eslint-disable jsx-a11y/alt-text */
 export default function SingleProject(props) {
   return (
-    <Card>
-      <Card.Img variant="top" src={props.preview} className="cardImg" />
-      <Card.Body>
-        <Card.Title> {props.title} </Card.Title>
-        <Card.Text>{props.description}</Card.Text>
-        <ul>
-          <li>{props.tech1}</li>
-          <li>{props.tech2}</li>
-          <li>{props.tech3}</li>
-          <li>{props.tech4}</li>
-        </ul>
-        <ButtonGroup>
-          <Button variant="outline-primary">Ver Projeto</Button>
-          <Button variant="outline-success">Repositório</Button>
-        </ButtonGroup>
-      </Card.Body>
-    </Card>
+    <Row>
+      <Col md={6}>
+        <Card>
+          <Card.Img variant="top" src={swdb} className="cardImg" />
+          <Card.Body>
+            <Card.Title>Star Wars Dashboard</Card.Title>
+            <Card.Text>
+              Mini projeto para estudo sobre consumo de API's utilizando axios.
+            </Card.Text>
+            <ul>
+              <li>Javascript</li>
+              <li>Axios</li>
+              <li>CSS</li>
+              <li>HTML</li>
+            </ul>
+            <ButtonGroup>
+              <a
+                href="https://starwars-dashboard-two.vercel.app/"
+                target="_blank"
+              >
+                <Button variant="outline-primary">Ver Projeto</Button>
+              </a>
+              <a
+                href="https://github.com/matheus6p/starwars-dashboard"
+                target="_blank"
+              >
+                <Button variant="outline-success">Repositório</Button>
+              </a>
+            </ButtonGroup>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
   );
 }
