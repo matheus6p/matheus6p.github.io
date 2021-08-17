@@ -16,12 +16,10 @@ export default function Projects() {
               description={
                 "Mini projeto para estudo sobre consumo de API's utilizando a biblioteca axios."
               }
-              tech={[
-                { lang: "HTML" },
-                { lang: "CSS" },
-                { lang: "Javascript" },
-                { lang: "Axios" },
-              ]}
+              tech1={"HTML"}
+              tech2={"CSS"}
+              tech3={"Javascript"}
+              tech4={"Axios"}
             />
           </Col>
           <Col md={6} className="mb-2">

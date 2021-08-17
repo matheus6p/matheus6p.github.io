@@ -2,11 +2,6 @@ import { Card, Button, ButtonGroup } from "react-bootstrap";
 
 /* eslint-disable jsx-a11y/alt-text */
 export default function SingleProject(props) {
-  const techs = props.tech;
-
-  techs.map((item) => {
-    console.log(item);
-  });
   return (
     <Card>
       <Card.Img variant="top" src={props.preview} className="cardImg" />
@@ -14,9 +9,10 @@ export default function SingleProject(props) {
         <Card.Title> {props.title} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
         <ul>
-          {techs.foreach((item) => {
-            <li> {item} </li>;
-          })}
+          <li>{props.tech1}</li>
+          <li>{props.tech2}</li>
+          <li>{props.tech3}</li>
+          <li>{props.tech4}</li>
         </ul>
         <ButtonGroup>
           <Button variant="outline-primary">Ver Projeto</Button>
